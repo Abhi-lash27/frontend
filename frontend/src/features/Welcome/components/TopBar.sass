@@ -1,0 +1,29 @@
+$top-bar-background: #0047AB  // Cobalt Blue
+$button-color: #ffffff         // Buttons text color
+$button-hover-color: #DAF0FF   // Lighter cobalt for hover
+
+.top-bar
+  width: 100%
+  height: 54px
+  border-bottom: 1px solid rgba(218, 220, 224, 0.5)
+  background: $top-bar-background
+  .profile
+    overflow: hidden
+    width: 40px
+    height: 40px
+    border-radius: 20px
+    margin: 7px 12px
+  .nav
+    display: flex
+    padding: 0 9px
+    .button
+      color: $button-color
+      font-size: 18px
+      padding: 9px
+      cursor: pointer
+    .button:hover
+      color: $button-hover-color
+
+@media screen and (min-width: 700px)
+  .mobile
+    display: none

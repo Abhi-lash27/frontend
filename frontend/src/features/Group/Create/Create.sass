@@ -1,0 +1,60 @@
+.group-create
+  height: 100%
+  flex-grow: 1
+  border-right: 1px solid rgba(0, 71, 171, 0.5) // cobalt blue border
+  display: flex
+  flex-direction: column
+
+  .notice
+    font-size: 12px
+    color: #cfd8e3 // light text
+    text-align: center
+    padding: 18px
+
+  .rooms
+    flex-grow: 1
+    overflow-y: scroll
+    -webkit-overflow-scrolling: touch
+
+@media screen and (min-width: 1200px)
+  .group-create
+    max-width: 360px
+    min-width: 360px
+
+@media screen and (min-width: 700px) and (max-width: 1199px)
+  .group-create
+    max-width: 300px
+    min-width: 300px
+
+@media screen and (max-width: 699px)
+  .group-create
+    width: 100%
+
+.theme.light .group-create
+  background: #0047AB
+
+.theme.dark .group-create
+  background: #003680 // slightly darker cobalt for dark theme
+
+.active
+  color: #ffcc00 !important // highlight in gold
+
+.selection-text
+  text-align: center
+  padding: 12px
+  font-size: 14px
+  background: #002F5D // very dark cobalt
+  color: #cfd8e3
+
+.selection-text.error
+  color: #ffcc00
+
+.create-button
+  background: #ffcc00
+  color: #0047AB
+  width: 100%
+  font-weight: bold
+
+.create-button:hover
+  background: #e6b800
+  opacity: 0.9

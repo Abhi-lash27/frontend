@@ -1,0 +1,81 @@
+.bottom-bar-conversation
+  width: 100%
+  min-height: 54px
+  max-height: 54px
+  border-top: 1px solid rgba(0, 71, 171, 0.3) // subtle cobalt border
+  background: #0047AB
+  .profile
+    overflow: hidden
+    width: 40px
+    height: 40px
+    border-radius: 20px
+    margin: 7px 12px
+    background: #002f70 // darker cobalt for avatar
+    color: #ffffff
+    display: flex
+    justify-content: center
+    align-items: center
+  .nav
+    display: flex
+    padding-right: 9px
+    .button
+      color: #ffffff
+      font-size: 13px
+      padding: 9px
+      cursor: pointer
+    .button:hover
+      color: lighten(#0047AB, 40%)
+
+  > input.search-input
+    flex-grow: 1
+    width: calc(100% - 87px)
+    height: 40px
+    font-size: 14px
+    padding: 0 8px
+    border: none
+    background-color: #003a80
+    color: #ffffff
+    ::placeholder
+      color: lighten(#0047AB, 50%)
+  .button
+    width: 36px
+    height: 36px
+    margin: 0 13px
+    font-size: 24px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    color: #ffffff
+  .smile
+    margin-right: 6px
+  .image-attach
+    margin: 0
+  .attach
+    margin-left: 6px
+
+.picker
+  position: relative
+  width: 0
+  height: 0
+  bottom: 451px // 410 + 41
+  left: 0
+
+.emoji-mart
+  border: none !important
+  border-radius: 0 !important
+  background: #0047AB !important
+  color: #ffffff !important
+
+.file-input
+  visibility: hidden
+  width: 0
+  height: 0
+  flex-grow: 0 !important
+  padding: 0 !important
+  margin: 0 !important
+
+.emoji-mart-preview-shortnames
+  display: none !important
+.emoji-mart-preview-emoticons
+  display: none !important

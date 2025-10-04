@@ -1,0 +1,83 @@
+.room
+  width: 100%
+  height: 54px
+  border-bottom: 1px solid rgba(0, 71, 171, 0.3) // cobalt tinted border
+  cursor: pointer
+  background: #e6f0fa  // light cobalt background for default
+
+  .dot
+    margin-left: -26px
+    margin-right: 11px
+    margin-top: 28px
+    width: 11px
+    height: 11px
+    border-radius: 8px
+    background: gray
+    border: 2px solid #fff
+
+  .online
+    background: #54d38a
+  .away
+    background: #ffa500
+  .busy
+    background: #d61314
+  .offline
+    background: gray
+
+  .profile
+    overflow: hidden
+    width: 40px
+    height: 40px
+    border-radius: 20px
+    margin: 7px 12px
+    .img
+      display: flex
+      width: 40px
+      height: 40px
+      border-radius: 20px
+      justify-content: center
+      align-items: center
+      background: #0047AB  // cobalt blue profile background
+      color: #f7f7f8
+      font-size: 18px
+
+  .text
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    .title
+      font-weight: bold
+      font-size: 13px
+      color: #0047AB  // cobalt blue text
+    .title.highlight
+      color: #002f6c  // darker cobalt for highlight
+    .message
+      font-size: 11px
+      color: #333
+    .message.highlight
+      font-weight: bold
+
+  .controls
+    display: flex
+    align-items: center
+    padding-right: 5px
+    .date
+      font-size: 10px
+      padding-right: 7px
+      text-align: right
+      padding-top: 2px
+    .button
+      color: #0047AB
+      font-size: 14px
+      padding: 5px
+      cursor: pointer
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 100%
+    .button:hover
+      color: #002f6c  // darker cobalt on hover
+
+.room:hover
+  background: #cce0ff  // light cobalt hover effect
